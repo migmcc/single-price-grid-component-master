@@ -1,0 +1,104 @@
+@import: url(https://fonts.google.com/specimen/Karla);
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyan2: hsl(179, 45%, 59%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+    background-color: var(--Light-Gray);
+    font-size: 16px;
+    font-family: Karla, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* ===================== Desktop ======================= */
+
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "a a"
+    "b c";
+    margin: 50px;
+    padding: 50px; 
+    width: 60vw;
+    height: 80vh;
+    justify-content: center;
+    align-content: center;
+}
+
+header {
+    grid-area: a;
+    background-color: white;
+    align-self: end;
+    justify-self: center;
+    padding: 2rem;
+    height: 13rem;
+    max-width: 5000px;
+
+}
+header h1 {
+    color: var(--Cyan);
+    font-size: 25px;
+    
+}
+header h2 {
+    color: var(--Bright-Yellow);
+    font-size: 20px;
+}
+header p {
+    line-height: 1.5;
+}
+
+.left {
+    grid-area: b;
+    background-color: var(--Cyan);
+    align-self: start;
+    justify-self: center;
+    padding: 2rem;
+    height: 13rem;
+    width: 30vw;
+    max-width: 2500px;
+    color: var(--Light-Gray);
+    justify-content: center;
+    align-content: center;
+}
+.left h2 {
+    margin-bottom: 0;
+}
+.left div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 50px;
+
+}
+.left div h1 {
+    font-size: 40px;
+    justify-self:center;
+    margin-top: 10px;
+}
+.left div p {
+    align-self: center;
+    margin-top: 0px;
+}
+.button {
+    width: 900px;
+}
+
+.right {
+    grid-area: c;
+    background-color: var(--Cyan2);
+    align-self: start;
+    justify-self: center;
+    padding: 2rem;
+    height: 13rem;
+    width: 30vw;
+    max-width: 2500px;
+    color: var(--Light-Gray);
+}
