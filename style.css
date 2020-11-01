@@ -24,7 +24,7 @@ body {
   display: grid;
   margin: auto;
   padding: 3em;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .box {
   padding: 2em;
@@ -66,7 +66,7 @@ body {
   color: var(--Light-Gray);
   font-size: 25px;
   margin-top: 1em;
-  width: 13em;
+  width: 10em;
   height: 2em;
   border: none;
   border-radius: 0.3em;
@@ -86,7 +86,7 @@ body {
 /* ======================== desktop =========================== */
 
 
-@media (min-width: 750px) {
+@media (min-width: 500px) {
     .container {
         grid-template-areas: 
         "item1 item1"
@@ -103,7 +103,7 @@ body {
         grid-area: item3;
     }
     .button {
-        width: 10em;
+        width: 6em;
     }
 }
 
